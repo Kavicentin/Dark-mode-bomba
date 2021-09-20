@@ -1,0 +1,46 @@
+body{
+    background-color: #2b3235;
+    color: white;
+}
+
+.navbar {
+    background-color:#34495e ;
+}
+
+
+
+.box {
+    background-color: #34495e;
+    color: white;
+}
+
+.box h1 {
+    color: white;
+}
+.box input[type = "submit"]:hover {
+    background:#2ecc71;   
+    color: black;
+}
+
+.box input[type = "submit"]{
+
+    color:white;
+
+}
+
+.box input[type = "text"],
+.box input[type = "password"]{
+    color:white;
+}
+.box .voltar {
+    color: white;
+}
+.box .voltar:hover {
+    background:#2ecc71;   
+    color: black;
+}
+.bar:hover {
+    cursor:pointer;
+    text-decoration: none;
+    color: #a5c6eb;
+}

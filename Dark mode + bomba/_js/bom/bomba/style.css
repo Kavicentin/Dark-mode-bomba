@@ -1,0 +1,45 @@
+
+
+button {
+    position: absolute;
+    left: 45%;
+    top: 55%;
+}
+img{
+    height: 100%;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: red;
+    position: absolute;
+    top: 17%;
+    text-align: center;
+
+}
+button{
+    border: none;
+    margin-left: -40px;
+    background-color: antiquewhite;
+    padding: 1px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+button h2{
+    font-size: 13px;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+

@@ -1,0 +1,26 @@
+body {
+    background-color: #e9e5e5;
+}
+.navbar {
+    background-color: #bbbbbb;
+}
+.box {
+    background-color: #bbbbbb;
+}
+
+.bar:hover {
+    cursor:pointer;
+    text-decoration: none;
+    color: #3498db;
+}
+.box input[type = "submit"]:hover {
+    background:#2ecc71;   
+    color: white;
+}
+.box .voltar:hover {
+    background:#2ecc71;   
+    color: white;
+}
+.box .voltar {
+    color: black;
+}

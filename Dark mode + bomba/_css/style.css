@@ -1,0 +1,270 @@
+    html {
+    
+    display: grid;
+
+
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+.log {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log h1 {
+    width: 100%;
+}
+.d-none {
+    display: none;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0;
+}
+
+header .nav {
+    max-width: 100%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    margin-top: 0;
+}
+
+header img {
+    width: 100%;
+    max-width: 100%;
+}.navbar {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+h1 {
+    width: 25%;
+    margin: 0;
+}
+header h1 {
+    padding: 2%;
+}
+
+.titulo{
+    font-family: 'Righteous', cursive;
+    font-size: 200%;
+}
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    position: absolute;
+}
+
+label:active:after {
+    width: 45px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.align-items{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#menu-itens ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#menu-itens ul li {
+    display: inline;
+}
+.logo{
+    width: 11%;
+    padding: 1%;
+}
+
+.box {
+    border-radius: 10%;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 45%;
+    left: 62.5%;
+    transform: translate(-50, -50);
+    text-align: center;
+    justify-content: center;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.logo {
+    cursor: pointer;
+}
+
+.bar {
+    font-size: 22px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+
+.inicio {
+    width: 100%;
+    display: flex;
+
+}
+.color {
+    display: flex;
+    width: 72%;
+    height: 100%;
+}
+
+
+
+ /* login */
+ 
+.box h1 {
+
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type = "text"],
+.box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,
+.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+  
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box .voltar {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.esq {
+    margin-top: 2%;
+}
+.reg {
+    margin-top: 2%;
+}
+.esqueci {
+    color: #9894a9;
+    text-decoration: none;
+    margin: 2%;
+}
+.registrar {
+    color: #9894a9;
+    text-decoration: none;
+    margin: 2%;
+}
+.esqueci:hover {
+    color: white;
+    text-decoration: underline;
+}
+.registrar:hover {
+    color: white;
+    text-decoration: underline;
+}
+.conta {
+    width: 50%;
+}
+
+.vida {
+    padding-left: 2%;
+}
+
+.d-flex {
+    display: flex;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>KIQ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" class="tema" href="_css/claro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav id=menu-itens class="navbar"> 
+        <img class="logo" src="_img/logo_claro.png" alt="">
+        <div class="color">
+          <ul class="inicio">
+            <li class="bar">Página inicial</li>
+            <li class="bar">Para você</li>
+            <li class="bar">O Banco KiQ</li>
+            <li class="bar">Perguntas</li>
+          </ul>
+        </div>
+
+        <input id="switch" type="checkbox" name="botão">
+        <label for="switch">Alternar</label>
+    
+        </nav>
+       
+
+   
+      </nav>
+      <div>
+        <h1 class="conta">Conta Grátis e 100% digital</h1>
+        <h2 class="vida"> Uma conta todinha pensada pra você comandar a sua vida financeira pelo celular.</h2>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <img src="_img/Happy-People.png"/>
+        </div>
+        <div class="col-6 align-items cor">
+
+          <!-- Login -->
+
+          <form id="form_log" class="box " action="login.html" method="POST">
+            <div class="log">
+              <h1>Login</h1>
+            </div>
+            <input autocomplete="off" type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <div class="esq">
+              <a class="esqueci" href="#"> Esqueci a senha</a>
+            </div>
+            <div class="reg">
+              <a id="registrar" class="registrar" href="#"> Registrar</a>
+            </div>
+            <input onclick="login(); return false" id="entrar" type="submit" name="" placeholder="Login">
+          </form>  
+
+        <!-- registrar -->
+
+        <form id="form_reg" class="box d-none" action="login.html" method="POST">
+          <div class="log">
+            <h1>Registrar-se</h1>
+          </div>
+          <input type="text" name="" placeholder="Username">
+          <input type="text" name="" placeholder="E-mail">
+          <input type="password" name="" placeholder="Password">
+          <div class="d-flex">
+            <button id="voltar" class="voltar">Voltar</button>
+            <input id="enviar" type="submit" name="" placeholder="Login">
+          </div>
+        </form>  
+      </div>
+    </header>
+    
+    <script src="_js/scripts.js"></script>
+  </body> 
+</html>

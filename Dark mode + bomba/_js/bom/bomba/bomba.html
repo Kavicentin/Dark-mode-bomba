@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bomba</title>
+    <link rel="stylesheet" href="_css/style.css">
+    <link href="https://fonts.google.com/specimen/Roboto+Mono">
+</head>
+<body>
+    <div class="titulo">
+        <h1>O tempo esta acabando!<br>Corte o fio certo!</h1>
+    </div>
+    <div class="">
+        <div class="container">
+            <div class="timer">
+                <span id="timer">02:00<span>
+            </div>
+            <div class="kaique">
+                <a href="perdeu.html">
+                <hr class="vermelho">
+                <button class="red">vermelho</button>
+                </a>
+                <a href="perdeu.html">
+                <hr class="verde">
+                <button class="green">verde</button>
+                </a>
+                <a href="ganhou.html">
+                <hr class="amarelo">
+                <button class="yellow">amarelo</button>
+                </a>
+                <a href="perdeu.html">
+                <hr class="branco">
+                <button class="white">branco</button>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+
+        <!-- custom js -->
+        <script>
+           window.onload = function () {
+               
+                var minute = 01;
+                var sec = 59;
+              
+                setInterval(function () {
+
+                    document.getElementById("timer").innerHTML = minute + " : " + sec;
+                    minute = parseInt(minute)
+                    sec = parseInt(sec)
+                    sec--;
+                    
+                    if (sec == -1) {
+                        minute--;
+                        sec = 59;
+                    }
+                    if (sec == 0 && minute == 0) {
+                        window.location.href = "perdeu.html";
+                    }
+
+                    minute = minute < 10 ? "0" + minute : minute;
+                    sec = sec < 10 ? "0" + sec : sec;
+
+                   
+                }
+              , 100);
+              
+            }
+            
+           </script>
+</body>
+</html>
+
+
